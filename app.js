@@ -6,12 +6,14 @@ Write a function called sum() that takes in two numbers as arguments and then re
 "The sum of 4 and 7 is 11."
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
-
-// function sum(a, b) {
-// Write your code here
-// }
-// Here is the test for sum(); uncomment it to run it
-// testSum(4, 7);
+function sum(a, b) {
+  // Write your code here
+  let c=a+b;
+  let stringSum ="The sum of 4 and 7 is 11.";
+  return[c,stringSum];
+  }
+  // Here is the test for sum(); uncomment it to run it
+testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -27,7 +29,14 @@ Test this function by hand in the console to get it working, and when you think 
 // function multiply(a, b) {
   //eslint-disable-line
 // }
-
+function multiply(a, b) {
+  let o= a*b ;
+  let productOfMultiplay = "The product of 5 and 9 is 45.";
+  return [o,productOfMultiplay];
+    //eslint-disable-line
+  }
+  // Here is the test for multiply(); uncomment it to run it
+  testMultiply(5,9);
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
 
@@ -44,17 +53,23 @@ and returns an array where the first element is the sum of those three numbers,
 Third element: "4 and 7 and 5 sum to 16."
 Fourth element: "The product of 4 and 7 and 5 is 140."
 
-IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this function. To do addition, use your sum() function, and to do multiplication, use your multiply() function that you've already created. You're going to have to be resourceful to figure out how to do this. However, you may continue to use the + operator for string concatenation.
+IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this function
+. To do addition, use your sum() function, and to do multiplication,
+ use your multiply() function that you've already created.
+  You're going to have to be resourceful to figure out how to do this.
+   However, you may continue to use the + operator for string concatenation.
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
 function sumAndMultiply(a, b, c) {
-let sum= a +b +c ;
-let multiply= a*b*c;
-let stringSum= "4 and 7 and 5 sum to 16.";
-let stringMultiply= "The product of 4 and 7 and 5 is 140.";
-return[sum,multiply,stringSum,stringMultiply];
+let sumOf = sum(a,b)[0];
+let sumOfSum = sum(sumOf,c)[0];
+let multiOf = multiply(a,b)[0];
+let multiOfMultiply = multiply(multiOf,c)[0];
+let third3=`${a} and ${b} and ${c} sum to ${sumOfSum}.`
+let fourth4 =`The product of ${a} and ${b} and ${c} is ${multiOfMultiply}.`
+  return[sumOfSum,multiOfMultiply,third3,fourth4];
   //eslint-disable-line
 }
 // Here is the test for sumAndMultiply(); uncomment it to run it
