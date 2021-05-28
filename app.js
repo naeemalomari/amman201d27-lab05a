@@ -42,6 +42,7 @@ testMultiply(5,9);
 
 /////////////////////////////////////
 /* Problem 3
+// changes
 Write a function called sumAndMultiply() that takes in three numbers as separate arguments and returns an array where the first element is the sum of those three numbers, the second element is the product of those three numbers,  and the third and fourth elements are strings that EXACTLY follow this example and use the values that were input into the function:
 
 Third element: "4 and 7 and 5 sum to 16."
