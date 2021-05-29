@@ -109,8 +109,17 @@ and when you think it is finished, uncomment the call for the testSumArray() fun
 let testArray = [2, 3, 4];
  //eslint-disable-line
 function sumArray(sumArr) {
+  let sumOfSum2 = 0;
+
+  for(var i = 0; i < sumArr.length ; i++){
+    sumOfSum2 = sum(sumOfSum2, sumArr[i])[0];
+  }
+  sumOfSum2 = sum(sumArr[0], sumArr[1])[0];
+ sumOfSum2 = sum(sumOfSum2, sumArr[2])[0];
+ return [sumOfSum2 ,sumArr +' was passed in as an array of numbers, and ' + sumOfSum2 + ' is their sum.'] ;
+
 }
-// testSumArray(testArray);
+testSumArray(testArray);
 
 //eslint-disable-line
 // Here is the test for sumArray(); uncomment it to run it
