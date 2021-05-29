@@ -1,20 +1,25 @@
 'use strict';
 /////////////////////////////////////
 /* Problem 1 (this is your demo that we'll solve in class)
-Write a function called sum() that takes in two numbers as arguments and then returns an array where the first element is the sum of those numbers, and the second element is a concatenated string that EXACTLY follows this example and uses the values that were input into the function:
+Write a function called sum() that takes in two numbers as arguments and then returns 
+an array where the first element is the sum of those numbers, and the second element is a 
+concatenated string that EXACTLY follows this example and uses the values that were input 
+into the function:
 
 "The sum of 4 and 7 is 11."
 
-Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
-function sum(a, b) {
-  // Write your code here
-  let c=a+b;
-  let stringSum ="The sum of 4 and 7 is 11.";
-  return[c,stringSum];
-  }
-  // Here is the test for sum(); uncomment it to run it
-testSum(4, 7);
+Test this function by hand in the console to get it working,
+ and when you think it is finished, uncomment the call for the testSum() function below and
+  check the console to see if the test passes.*/
 
+function sum(a, b) {
+// Write your code here
+let c=a+b;
+let stringSum ="The sum of 4 and 7 is 11.";
+return[c,stringSum];
+}
+// Here is the test for sum(); uncomment it to run it
+testSum(4, 7);
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
@@ -30,13 +35,10 @@ Test this function by hand in the console to get it working, and when you think 
   //eslint-disable-line
 // }
 function multiply(a, b) {
-  let o= a*b ;
-  let productOfMultiplay = "The product of 5 and 9 is 45.";
-  return [o,productOfMultiplay];
     //eslint-disable-line
   }
   // Here is the test for multiply(); uncomment it to run it
-  testMultiply(5,9);
+//   testMultiply(5,9);
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
 
@@ -63,17 +65,10 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) {
-let sumOf = sum(a,b)[0];
-let sumOfSum = sum(sumOf,c)[0];
-let multiOf = multiply(a,b)[0];
-let multiOfMultiply = multiply(multiOf,c)[0];
-let third3=`${a} and ${b} and ${c} sum to ${sumOfSum}.`
-let fourth4 =`The product of ${a} and ${b} and ${c} is ${multiOfMultiply}.`
-  return[sumOfSum,multiOfMultiply,third3,fourth4];
   //eslint-disable-line
 }
 // Here is the test for sumAndMultiply(); uncomment it to run it
-testSumAndMultiply(4,7,5);
+// testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -98,17 +93,8 @@ and when you think it is finished, uncomment the call for the testSumArray() fun
 let testArray = [2, 3, 4];
  //eslint-disable-line
 function sumArray(sumArr) {
-  let sumOfSum2 = 0;
-
-  for(var i = 0; i < sumArr.length ; i++){
-    sumOfSum2 = sum(sumOfSum2, sumArr[i])[0];
-  }
-  sumOfSum2 = sum(sumArr[0], sumArr[1])[0];
- sumOfSum2 = sum(sumOfSum2, sumArr[2])[0];
- return [sumOfSum2 ,sumArr +' was passed in as an array of numbers, and ' + sumOfSum2 + ' is their sum.'] ;
-
 }
-testSumArray(testArray);
+// testSumArray(testArray);
 
 //eslint-disable-line
 // Here is the test for sumArray(); uncomment it to run it
@@ -130,16 +116,10 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
  //eslint-disable-line
  function multiplyArray(multArr) { 
-  let multiOfMultiply2 = 1;
-  multiOfMultiply2 = multiply(multArr[0], multArr[1])[0];
-  multiOfMultiply2 = multiply(multiOfMultiply2, multArr[2])[0];
-
- return [multiOfMultiply2, 'The numbers ' + multArr + ' have a product of ' + multiOfMultiply2 + '.'];
-
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-testMultiplyArray(testArray);
+// testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
